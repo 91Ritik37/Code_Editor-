@@ -28,7 +28,7 @@ function TextEditor() {
     console.log(documentId);
 
     useEffect(() => {
-        const s = io("https://scary-marj-helloeveryon.koyeb.app/");
+        const s = io("https://scary-marj-helloeveryon.koyeb.app");
         setSocket(s);
         return () => {
             s.disconnect();
